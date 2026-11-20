@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    color: white;
+}
+
+.login-page {
+    min-height: 100vh;
+    padding: 25px 7%;
+    background:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+        url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1920&q=90")
+        center / cover no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-logo {
+    position: absolute;
+    top: 25px;
+    left: 7%;
+    color: #e50914;
+    font-size: 38px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.login-logo:hover {
+    color: #e50914;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(0,0,0,.85);
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.login-box h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.login-box input {
+    height: 55px;
+    margin-bottom: 18px;
+    background: #333;
+    border: none;
+    color: white;
+}
+
+.login-box input:focus {
+    background: #333;
+    color: white;
+    box-shadow: none;
+    border-bottom: 2px solid #e50914;
+}
+
+.login-box input::placeholder {
+    color: #aaa;
+}
+
+.register-btn {
+    width: 100%;
+    height: 48px;
+    background: #e50914;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background: #b20710;
+}
+
+.account-link {
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 28px;
+}
+
+.account-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.account-link a:hover {
+    text-decoration: underline;
+}
+
+#registerMessage {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.designer {
+    color: #aaa;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+@media(max-width: 500px) {
+    .login-box {
+        padding: 30px 25px;
+    }
+
+    .login-logo {
+        font-size: 30px;
+    }
+}
